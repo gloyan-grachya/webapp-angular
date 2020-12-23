@@ -1,0 +1,132 @@
+<div class="profile-container">
+    <!-- <router-outlet></router-outlet> -->
+    <app-profile-header></app-profile-header>
+    <div class="main-container d-flex">
+        <app-side-nav></app-side-nav>
+        <div class="content" id="content">
+            <div class="row mx-0 statics">
+                <div class="col-md-3 col-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4>Job Published</h4>
+                            <div class="total">
+                                <img src="../../../../assets/img/chart.png"> <span>70</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4>Job Application Pending</h4>
+                            <div class="total">
+                                <img src="../../../../assets/img/chart.png"> <span>70</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4>Job Published</h4>
+                            <div class="total">
+                                <img src="../../../../assets/img/chart.png"> <span>70</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4>Job Application Pending</h4>
+                            <div class="total">
+                                <img src="../../../../assets/img/chart.png"> <span>70</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row mx-0 align-items-center filters">
+                <div class="col-md-11 col-12 px-0">
+                    <div class="row mx-0">
+                        <div class="col-lg-3 col-md-3 col-12 input-container">
+                            <div class="input-filed">
+                                <p-dropdown placeholder="Select Type"></p-dropdown>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-12 input-container">
+                            <div class="input-filed">
+                                <p-dropdown placeholder="City"></p-dropdown>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-12 input-container">
+                            <div class="input-filed">
+                                <p-calendar [showIcon]="true" inputId="icon" placeholder="12-Sep-2020"></p-calendar>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-12 input-container">
+                            <div class="input-filed">
+                                <p-dropdown placeholder="latest"></p-dropdown>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-1 col-12 btn-container">
+                    <button class="search-btn"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+            <div class="row mx-0 jobs">
+                <div class="col-12">
+                    <p-accordion>
+                        <p-accordionTab *ngFor="let x of [1,2,3,4];">
+                            <ng-template pTemplate="header">
+                                <div class="header d-flex justify-content-between w-100">
+                                    <div class="heading d-flex align-items-center">
+                                        <div class="img-box">
+                                            <img src="../../../../assets/img/assembler.png" width="20%" alt="" class="img-fluid">
+                                        </div>
+                                        <h1>Umzugshelfer am 17.08. für ca. 6 Stunden</h1>
+                                    </div>
+                                    <div class="time">
+                                        <span><i class="far fa-clock"></i> vor 3 std</span>
+                                    </div>
+                                </div>
+                                <div class="row mx-0 jobs-timing">
+                                    <div class="col-md-3 col-6 px-0">
+                                        <span><i class="far fa-calendar-alt"></i> 17/11/2020</span>
+                                    </div>
+                                    <div class="col-md-3 col-6 px-0">
+                                        <span><i class="fas fa-euro-sign"></i> 10,000 &euro;/Std</span>
+                                    </div>
+                                    <div class="col-md-3 col-6 px-0">
+                                        <span><i class="fas fa-stopwatch"></i>ca. 6 Stun­den</span>
+                                    </div>
+                                    <div class="col-md-3 col-6 px-0">
+                                        <span><i class="fas fa-map-marker-alt"></i>71364 Win­nen­den</span>
+                                    </div>
+                                </div>
+                            </ng-template>
+
+                            <ng-template pTemplate="content">
+                                <div class="row mx-0 jobs">
+                                    <div class="col-12">
+                                        <div class="job-description">
+                                            <p> test some content here test some content here ...</p>
+                                            <button>Apply</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </ng-template>
+
+                        </p-accordionTab>
+
+                    </p-accordion>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>

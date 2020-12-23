@@ -1,0 +1,19 @@
+p {
+    font-family: 'Ubuntu';
+    font-size: 13px;
+    color: #152247;
+    margin: 0px;
+}
+
+b {
+    color: #ffa04a;
+}
+
+.footer-copyright-section {
+    color: #152247;
+    font-family: UbuntuRegular;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
